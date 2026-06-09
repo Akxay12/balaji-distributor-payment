@@ -1,0 +1,8 @@
+{
+  "name": "Balaji Distributors Payment",
+  "description": "A realistic mobile-first UPI payment simulation screen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
