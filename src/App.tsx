@@ -4,7 +4,7 @@ import {
   Navigate
 } from "react-router-dom";
 
-import PaymentUi from "./PaymentUi";
+import PaymentUi from "./paymentUi";
 
 export default function App() {
 
