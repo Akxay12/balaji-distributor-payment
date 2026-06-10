@@ -156,23 +156,23 @@ useEffect(() => {
 
       if (data?.expiresAt) {
 
-    console.log("Backend expiresAt:", data.expiresAt);
-
-    const expires =
-      new Date(data.expiresAt).getTime();
-
-    const now = Date.now();
-
-    console.log("Expires:", expires);
-    console.log("Now:", now);
-    console.log("Difference:", expires - now);
-
-    setTimeLeft(
-      Math.max(
-        0,
-        Math.floor((expires - now) / 1000)
-      )
+  const cleanExpiresAt =
+    data.expiresAt.replace(
+      /\.(\d{3})\d*/,
+      '.$1'
     );
+
+  const expires =
+    new Date(cleanExpiresAt).getTime();
+
+  const now = Date.now();
+
+  setTimeLeft(
+    Math.max(
+      0,
+      Math.floor((expires - now) / 1000)
+    )
+  );
 }
 
     } catch (err) {
