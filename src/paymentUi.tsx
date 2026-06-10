@@ -191,7 +191,7 @@ useEffect(() => {
 
 }, [id]);
 
-
+ 
 
 //polling
 useEffect(() => {
@@ -559,7 +559,7 @@ useEffect(() => {
                 <div className="px-6 pt-4 pb-2 mt-auto">
                   <button
                     onClick={handlePay}
-                    disabled={timeLeft <= 0}
+                    disabled={false}
                     className="w-full bg-[#1A73E8] hover:bg-[#1557B0] disabled:bg-neutral-300 disabled:cursor-not-allowed text-white text-[17px] font-semibold py-[18px] rounded-full transition-all active:scale-[0.98] shadow-[0_8px_20px_-6px_rgba(26,115,232,0.4)]"
                   >
                     Pay Now
